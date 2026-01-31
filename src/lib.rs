@@ -13,6 +13,13 @@ pub use bytestring::ByteString;
 
 use bytes::BytesMut;
 
+/// A pool for creating byte-slices and strings that can be cheaply cloned and shared across threads
+/// without allocating memory. Byte-slices are shared as [`Bytes`], and strings are shared as
+/// [`ByteString`]s.
+///
+/// Internally, a `BytesPool` is a wrapper around a [`BytesMut`] buffer from the [`bytes`] crate.
+/// It shares data by appending the data to its buffer and then splitting the buffer off with
+/// [`BytesMut::split`]. This only allocates memory if the buffer needs to resize.
 #[derive(Clone, Debug, Default, PartialEq, Eq, PartialOrd, Ord, Hash)]
 pub struct BytesPool {
     inner: BytesMut,
