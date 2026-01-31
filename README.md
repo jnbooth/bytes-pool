@@ -3,10 +3,10 @@
 Allocation-free sharing of bytes and strings using [`Bytes`](https://docs.rs/bytes/latest/bytes/struct.Bytes.html) from the [`bytes`](https://docs.rs/bytes) crate as storage.
 
 [![crates.io](https://img.shields.io/crates/v/bytes-pool.svg)](https://crates.io/crates/bytes-pool)
-[![Documentation](https://docs.rs/bytes-pool/badge.svg?version=1.0.0)](https://docs.rs/bytes-pool/1.0.0)
+[![Documentation](https://docs.rs/bytes-pool/badge.svg)](https://docs.rs/bytes-pool)
 ![MIT licensed](https://img.shields.io/crates/l/bytes-pool.svg)
 <br />
-[![Dependency Status](https://deps.rs/crate/bytes-pool/1.0.0/status.svg)](https://deps.rs/crate/bytes-pool/1.0.0)
+[![Dependency Status](https://deps.rs/crate/bytes-pool/latest/status.svg)](https://deps.rs/crate/bytes-pool)
 ![Downloads](https://img.shields.io/crates/d/bytes-pool.svg)
 
 ## Usage
